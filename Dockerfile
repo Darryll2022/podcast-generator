@@ -1,7 +1,8 @@
 #open our own virtual machine
 From ubuntu:latest
 #apt-get is to load things into ubuntu, use \ to run multi lines
-Run apt-get update && apt-get install -y \
+Run apt-get update && \ 
+    apt-get install -y \
     python3.10 \
     python3-pip \
     git
