@@ -10,7 +10,7 @@ git config --global --add safe.directory /github/workspace
 #use wtv python u installed here. link is as per dockerfile
 
 #run python
-python3 /urs/bin/feed.py
+python3 /usr/bin/feed.py
 
 #send things back to server,push back to main
 git add -A && git commit -m "Update Feed"
