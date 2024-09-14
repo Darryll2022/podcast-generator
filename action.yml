@@ -1,0 +1,26 @@
+#this action wont go in to workflow docs like regular actions
+# when you use another repository to run this repository, it's going to find this action, 
+#understand that it needs to use the Docker image, run the Docker file to generate the server, 
+#then this runs the entry point. The entry point is going to set up, "Git run, feed dot py," 
+#and then push that all back onto the server. And after all that, 
+#it should generate your feeds from another repository
+name: "Podcast Generator" 
+author: " Ray Villalobos"
+description: "Generate a feed for podcast from a YAML file"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+#piece of branding to these things, so that in the marketplace, 
+#they have a little icon and the icons come from a library called "Feather Icons."
+branding:
+  icon: "git-branch"
+  color: "red"
+inputs:
+  email:
+    description: The commiter's email address
+    required: true
+    default: ${{ github.actor }}@localhost
+  name:
+    description: The commiter's name
+    required: true
+    default: ${{ github.actor }}
