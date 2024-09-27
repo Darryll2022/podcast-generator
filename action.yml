@@ -4,7 +4,7 @@
 #then this runs the entry point. The entry point is going to set up, "Git run, feed dot py," 
 #and then push that all back onto the server. And after all that, 
 #it should generate your feeds from another repository
-name: "Podcast-Generator" 
+name: "Podcast-Generator-Mini-Project" 
 author: " Ray Villalobos"
 description: "Generate a feed for podcast from a YAML file"
 runs:
